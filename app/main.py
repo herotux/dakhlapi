@@ -1,7 +1,5 @@
 from fastapi import FastAPI
-from app.api import (
-    users, persons, incomes, expenses, tags, budgets, categories, accounts, debts, credits, installments, auth
-)
+from app.api import users, persons, incomes, expenses, tags, budgets, categories, accounts, debts, credits, installments, auth
 from app.database import engine, Base
 
 # ایجاد جداول دیتابیس
