@@ -5,7 +5,10 @@ from app.dependencies import get_db, oauth2_scheme
 from app.crud.user import get_user_by_username
 from app.schemas.user import Token
 from datetime import timedelta
-from app.core.security import create_access_token
+from app.core.security import create_access_token, verify_password  # اضافه کردن verify_password
+from app.core.config import settings  # اضافه کردن تنظیمات JWT
+
+
 
 router = APIRouter()
 
