@@ -15,3 +15,10 @@ class UserResponse(BaseModel):
     last_name: str
     email: str
     is_admin: bool
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+class TokenData(BaseModel):
+    username: str
